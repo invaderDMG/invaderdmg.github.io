@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Oswald|PT+Sans+Narrow');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, big, br, cite, code, del, dfn, em, hr, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, button, caption, input, fieldset, form, label, legend, output, table, textarea, tbody, tfoot, thead, tr, th, td, article, aside, audio, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, mark, menu, nav, option, output, ruby, section, select, summary, time, video {
+    border: 0;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+a, abbr, acronym, b, bdo, big, br, cite, code, del, dfn, em, i, ins, kbd, mark, q, samp, s, small, span, strike, strong, sub, sup, time, tt, var {
+    display: inline;
+}
+
+blockquote, button, caption, dd, dt, figcaption, h1, h2, h3, h4, h5, h6, input, legend, option, output, p, pre, select, textarea {
+    display: block;
+}
+
+[hidden] {
+    display: none;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    color: black;
+    font-size: 100%;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    min-height: 100vh;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, q:before, blockquote:after, q:after {
+    content: '';
+    content: none;
+}
+
+input[type=date], input[type=datetime-local], input[type=file], input[type=month], input[type=time], input[type=week], select {
+    flex-direction: row;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-spacing: 0;
+    display: table;
+}
+
+tbody {
+    display: table-row-group;
+}
+
+td, th {
+    display: table-cell;
+}
+
+thead {
+    display: table-header-group;
+}
+
+tr {
+    display: table-row;
+}
+
+/* DA REAL CSS */
+.printable {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.printable .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.printable .main {
+    display: flex;
+    flex-direction: row;
+}
+
+.printable aside {
+    display: flex;
+    flex: 1;
+    background-color: #3280BC;
+    min-width: 100px;
+    width: 25%;
+    max-width: 300px;
+    color: white;
+    min-height: 100vh;
+}
+
+#me {
+    padding: 20px;
+    background-color: #28699A;
+}
+
+#me img {
+    max-width: 250px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+h1 small {
+    font-size: 0.8em;
+    display: block;
+}
+
+aside .cvblock {
+    padding: 20px;
+}
+
+aside .cvblock .title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+aside .cvblock ul li {
+    margin-bottom: 5px;
+}
+
+.skillbar {
+    margin-bottom: 5px;
+    font-size: 0.8em;
+}
+
+.printable .content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.printable .content .cvblock, .printable .content .cvblock article {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+h3 small {
+    display: inline-block;
+    float: right;
+}
+
+h3 span {
+    display: block;
+    text-transform: none;
+}
+
+#digital_competences {
+    display: flex;
+    flex-direction: column;
+}
+
+#digital_competences .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#digital_competences .skillbar {
+    margin-right: 10px;
+    max-width: 23%;
+}
+
+#digital_competences h3 {
+    margin-top: 10px;
+}
+
+#digital_competences .category, #digital_competences .list {
+    margin-bottom: 5px;
+}
+
+footer {
+	padding: 20px;
+	display: flex;
+	background-color: fuchsia;
+}
+
+@media (max-width:768px) {
+    .printable .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .printable aside {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #me img {
+        display: none;
+    }
+
+    #digital_competences .list {
+        flex-direction: column;
+    }
+
+    #digital_competences .skillbar {
+        margin-right:0;
+        max-width: 100%;
+    }
+}
+
+@media (min-width:1200px) { 
+    body {
+        width: 1200px;
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+}
+/*
+     FILE ARCHIVED ON 10:44:17 Oct 22, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:02:10 Oct 27, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 216.709
+  exclusion.robots: 0.133
+  exclusion.robots.policy: 0.127
+  RedisCDXSource: 10.294
+  esindex: 0.028
+  LoadShardBlock: 183.527 (3)
+  PetaboxLoader3.datanode: 125.691 (4)
+  CDXLines.iter: 20.28 (3)
+  load_resource: 654.771
+  PetaboxLoader3.resolve: 34.674
+*/
