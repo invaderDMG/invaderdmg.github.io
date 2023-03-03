@@ -1,125 +1,170 @@
-/* Space out content a bit */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
+@font-face {
+  font-family: 'Poppins';
+  src:url('../fonts/Poppins.ttf.woff') format('woff'),
+      url('../fonts/Poppins.ttf.svg#Poppins') format('svg'),
+      url('../fonts/Poppins.ttf.eot'),
+      url('../fonts/Poppins.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src:url('../fonts/Poppins-SemiBold.ttf.woff') format('woff'),
+      url('../fonts/Poppins-SemiBold.ttf.svg#Poppins-SemiBold') format('svg'),
+      url('../fonts/Poppins-SemiBold.ttf.eot'),
+      url('../fonts/Poppins-SemiBold.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
 }
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
+html {
+  width: 1024px;
+  margin: 0 auto;
+  font-family: 'Poppins';
+  font-size: 1.15em;
 }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
+#header {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+  padding: 50px 0 20px;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+#header .inlineFields {
+  border-bottom: 1px solid black; 
 }
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+h1 { 
+  font-size: 2em;
+  font-family: 'Poppins-SemiBold';
 }
 
-.bib tr td:first-child {
-  display: none
+p {
+  line-height: 1.25;
 }
 
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.inlineFields {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
 }
 
-.navbar {
+.inlineFields .separator {
+  margin: 0 10px;
+}
+
+.description {
+  padding: 20px 0;
+  text-align: left;
+}
+
+.description span {
+  font-family: 'Poppins-SemiBold';
+  font-size: 1.25em;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.section span.title{
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  line-height: 1.5;
+  border-bottom: 1px solid black; 
+  margin-bottom: 10px;
+}
+
+article {
   margin-bottom: 20px;
 }
 
-.header-bar {
-  display: block;
-  padding: 5px 10px;
-  color: #fff;
-  text-align: left;
-  background-color: #848482;
+article .inlineFields {
+  justify-content: flex-start;
+  padding: 0;
+  line-height: 1.25;
 }
 
-.header-bar .address {
-  color: #B6B6B4;
+article .company, article .educationName {
+  font-family: 'Poppins-SemiBold';
+  font-size: 1.1em;
 }
 
-.float-right {
-  float: right;
-  margin: 10px 10px 10px 10px
+article .roleName {
+  font-family: 'Poppins-SemiBold';
+  line-height: 1.25;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+article .location {
+  display: inline-block;
 }
 
-@media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-  }
-  .col-sm-2 {
-    width: 16.66666667%;
-  }
+article .inlineFields > span::before , article .location::before{
+  content: '·';
+  padding: 0 5px;
+} 
+
+article ul li {
+  list-style: disc;
+  margin-left: 20px;
+  line-height: 1.25;
+  padding-bottom: 10px;
+}
+
+ul.list li {
+  display:inline-block;
+}
+
+ul.list li::after {
+  content: ' · ';
+}
+
+ul.list li::last::after {
+  content: '';
 }
