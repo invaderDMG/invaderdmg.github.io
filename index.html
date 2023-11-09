@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan de la Cruz Garcia Garcia</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juan de la Cruz Garcia Garcia</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 <body>
-    <div id="header" itemscope itemtype="https://schema.org/Person">
-        <h1>Juan de la Cruz García García</h1>
-        <div class="inlineFields">
-            <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                <span itemprop="addressLocality">Cádiz</span>,
-                <span itemprop="addressCountry">Spain</span>
-                <span class="separator">·</span>
+    <div class="container">
+        <div id="header" itemscope itemtype="https://schema.org/Person">
+            <h1>Juan de la Cruz García García</h1>
+            <div class="inlineFields">
+                <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="addressLocality">Cádiz</span>,
+                    <span itemprop="addressCountry">Spain</span>
+                    <span class="separator">·</span>
+                </div>
+                <a href="mailto:jcruzgar@gmail.com" itemprop="email">jcruzgar@gmail.com</a><span class="separator">·</span>
+                <a href="https://linkedin.com/in/jdlcgarcia" itemprop="url">https://linkedin.com/in/jdlcgarcia</a>
             </div>
-            <span itemprop="telephone">+34 645 406 763</span><span class="separator">·</span>
-            <a href="mailto:jcruzgar@gmail.com" itemprop="email">jcruzgar@gmail.com</a><span class="separator">·</span>
-            <a href="https://linkedin.com/in/jdlcgarcia" itemprop="url">https://linkedin.com/in/jdlcgarcia</a>
+    
+            <div class="description">
+                <h2><span itemprop="jobTitle">Lead Developer</span></h2>
+                <p>I am a Software Developer who has consistently delivered outstanding results in variousindustries and companies. I have a strong background in various programming languages andframeworks (PHP, Symfony, Laravel, Yii, Zend Framework), a solid foundation in softwaremanagement, further reinforcing my technical prowess.</p>
+            </div>
         </div>
-
-        <div class="description">
-            <span itemprop="jobTitle">Backend Developer</span>
-            <p>I am a Backend Developer with 14 years of experience creating, improving, and adapting software
-                solutions. My skills include writing optimized, efficient, and scalable code with a natural
-                problem-solving attitude. I value integrity, and I strive to maintain the highest ethical standards in
-                everything I do</p>
-        </div>
-    </div>
 
     <div class="section">
-        <span class="title">Work Experience</span>
+        <h3><span class="title">Work Experience</span></h3>
         <article>
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <div class="inlineFields">
                     <div itemscope itemtype="https://schema.org/Organization">
-                        <span class='company' itemprop="name">Trusted Shops</span>
+                        <span class="roleName" itemprop="roleName">Lead & Backend Developer</span>
+                    </div>
+                    
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='company' itemprop="name">@ Trusted Shops</span>
                     </div>
                     <div class='location' itemscope itemtype="https://schema.org/VirtualLocation">
-                        <span>Remote</span>
+                        <span>Köln / Remote</span>
                     </div>
                     <span itemprop="startDate" content="2022-01-01">01/2022</span>
-                    <span itemprop="endDate" content="2023-03-02">Present</span>
+                    <span itemprop="endDate" content="2023-11-09">Present</span>
                 </div>
-                <span class="roleName" itemprop="roleName">Senior Backend PHP Developer</span>
                 <span itemprop="description">
                     <ul>
-                        <li>Developed requested features to the main project (based on Symfony) which expanded usage by
-                            15% in 12 months.</li>
-                        <li>Introduced code monitoring tools (Sonarqube and CircleCI) and processes to increase the
-                            scalability, improving the code quality, reducing complexity and reliability of deployments
-                        </li>
-                        <li>Internal tech talks about Unit Testing and Test Driven Development (TDD)</li>
+                        <li>Development of a project based on Symfony which simplifies the usage of a GraphQL API to end users and third systems, providing statistics and reports for sales department.</li>
+                        <li>Maintenance of project based on PHP to help final users to generate documentation according to templates or custom information, and private dashboard to provide usage statistics.</li>
+                        <li>Management of projects, from planning to execution and monitoring. Such projects involve migration to AWS, version upgrading and integration on other tools, among others.</li>
+                        <li>Facilitation of tech talks about Test-Driven development and Unit Testing.</li>
+                        <li>Development of an automation project involving external services which reduced manual effort and provided automatic statistics and marketing mailing.</li>
                     </ul>
                 </span>
             </div>
@@ -64,43 +61,22 @@
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <div class="inlineFields">
                     <div itemscope itemtype="https://schema.org/Organization">
-                        <span class='company' itemprop="name">Aareon AG</span>
+                        <span class="roleName" itemprop="roleName">Squad Leader & Backend Developer</span>
+                    </div>
+                    
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='company' itemprop="name">@ Aaeron AG</span>
                     </div>
                     <div class='location' itemscope itemtype="https://schema.org/VirtualLocation">
-                        <span>Remote</span>
+                        <span>Mainz / Remote</span>
                     </div>
                     <span itemprop="startDate" content="2021-04-01">04/2021</span>
                     <span itemprop="endDate" content="2022-01-01">01/2022</span>
                 </div>
-                <span class="roleName" itemprop="roleName">Senior Backend PHP Developer</span>
                 <span itemprop="description">
                     <ul>
-                        <li>Developed a localisation system and process to provide information to different systems
-                            through RESTful API (built in Symfony) in multiple languages, in 6 months</li>
-                        <li>Squad leader and link between developers and product managers and stakeholders</li>
-                        <li>Side learning project built on Laravel and Postgres published on AWS</li>
-                    </ul>
-                </span>
-            </div>
-        </article>
-
-        <article>
-            <div itemscope itemtype="https://schema.org/OrganizationRole">
-                <div class="inlineFields">
-                    <div itemscope itemtype="https://schema.org/Organization">
-                        <span class='company' itemprop="name">WATA Factory</span>
-                    </div>
-                    <div class='location' itemscope itemtype="https://schema.org/VirtualLocation">
-                        <span>Remote</span>
-                    </div>
-                    <span itemprop="startDate" content="2022-01-01">10/2019</span>
-                    <span itemprop="endDate" content="2021-03-01">03/2021</span>
-                </div>
-                <span class="roleName" itemprop="roleName">Senior Backend PHP Developer</span>
-                <span itemprop="description">
-                    <ul>
-                        <li>Implementation of development team for international clients, focused on Symfony, in 6
-                            months</li>
+                        <li>Leader developer for international projects. Spearhead of the company in the UK market</li>
+                        <li>Development of Symfony projects for third party clients, setup of environment with Docker and installation in Apache and Nginx servers.</li>
                         <li>Corporate website development and editor (multi-language Wordpress)</li>
                     </ul>
                 </span>
@@ -111,21 +87,47 @@
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <div class="inlineFields">
                     <div itemscope itemtype="https://schema.org/Organization">
-                        <span class='company' itemprop="name">Empresa Provincial de Información de Cádiz S.A.</span>
+                        <span class="roleName" itemprop="roleName">Software Developer</span>
                     </div>
-                    <div itemprop="location" itemscope itemtype="https://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">· Cádiz</span>,
-                        <span itemprop="addressCountry">Spain</span>
+                    
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='company' itemprop="name">@ WATA Factory</span>
+                    </div>
+                    <div class='location' itemscope itemtype="https://schema.org/VirtualLocation">
+                        <span>Jerez de La Frontera / Remote</span>
+                    </div>
+                    <span itemprop="startDate" content="2019-10-01">10/2019</span>
+                    <span itemprop="endDate" content="2021-03-01">03/2021</span>
+                </div>
+                <span itemprop="description">
+                    <ul>
+                        <li>Mentoring and leadership of the squad, formed by frontend and backend developers. Communication hub with PO, tech lead and stakeholders</li>
+                        <li>Development of a localization system based in Laravel and documentation of the process to provide information to different systems through RESTful API in multiple languages</li>
+                    </ul>
+                </span>
+            </div>
+        </article>
+
+        <article>
+            <div itemscope itemtype="https://schema.org/OrganizationRole">
+                <div class="inlineFields">
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class="roleName" itemprop="roleName">Software Developer</span>
+                    </div>
+                    
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='company' itemprop="name">@ EPICSA</span>
+                    </div>
+                    <div class='location' itemscope itemtype="https://schema.org/Location">
+                        <span>Cádiz</span>
                     </div>
                     <span itemprop="startDate" content="2019-03-01">03/2019</span>
                     <span itemprop="endDate" content="2019-10-01">10/2019</span>
                 </div>
-                <span class="roleName" itemprop="roleName">Senior Software Developer</span>
                 <span itemprop="description">
                     <ul>
-                        <li>Development and Optimization of Government Administration web tools made in Java, Oracle,
-                            PHP (Laravel and  Symfony) and MySQL.</li>
-                        <li>Administration of blog based on Joomla and internal project tracker based on Redmine</li>
+                        <li>Development of Government Administration web tools made in Java, Oracle, PHP, MySQL.</li>
+                        <li>Technical support of Government Administration tools to end users and administration of private instances of Joomla and Redmine</li>
                     </ul>
                 </span>
             </div>
@@ -135,21 +137,22 @@
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <div class="inlineFields">
                     <div itemscope itemtype="https://schema.org/Organization">
-                        <span class='company' itemprop="name">Basebone</span>
+                        <span class="roleName" itemprop="roleName">Software Developer</span>
+                    </div>
+                    
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='company' itemprop="name">@ Basebone</span>
                     </div>
                     <div class='location' itemscope itemtype="https://schema.org/VirtualLocation">
-                        <span>Remote</span>
+                        <span>Marbella / Remote</span>
                     </div>
                     <span itemprop="startDate" content="2018-01-01">01/2018</span>
                     <span itemprop="endDate" content="2019-03-01">03/2019</span>
                 </div>
-                <span class="roleName" itemprop="roleName">Senior backend PHP Developer</span>
                 <span itemprop="description">
                     <ul>
-                        <li>Development of new functionalities and support of existing ones for high capacity traffic
-                            routing
-                            system using Lumen microframework, based on Laravel.</li>
-                        <li>Integration of external systems (Hubspot, Hasoffers) through API.</li>
+                        <li>Development of new functionalities for high capacity traffic routing system for advertising systems in emerging economies and maintenance of existing tools.</li>
+                        <li>Integration of third party services like HubSpot and Hasoffers through API.</li>
                     </ul>
                 </span>
             </div>
@@ -159,19 +162,21 @@
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <div class="inlineFields">
                     <div itemscope itemtype="https://schema.org/Organization">
-                        <span class='company' itemprop="name">QaShops</span>
+                        <span class="roleName" itemprop="roleName">Software Developer</span>
                     </div>
-                    <div itemprop="location" itemscope itemtype="https://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">· Dos Hermanas</span>,
-                        <span itemprop="addressCountry">Spain</span>
+                    
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='company' itemprop="name">@ QaShops</span>
+                    </div>
+                    <div class='location' itemscope itemtype="https://schema.org/Location">
+                        <span>Dos Hermanas</span>
                     </div>
                     <span itemprop="startDate" content="2017-08-01">08/2017</span>
                     <span itemprop="endDate" content="2018-01-01">01/2018</span>
                 </div>
-                <span class="roleName" itemprop="roleName">Senior backend PHP Developer</span>
                 <span itemprop="description">
                     <ul>
-                        <li>Development of marketplace manager property product using Yii Framework 2</li>
+                        <li>Development of features for a marketplace manager based in Yii Framework 2.</li>
                     </ul>
                 </span>
             </div>
@@ -181,21 +186,22 @@
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <div class="inlineFields">
                     <div itemscope itemtype="https://schema.org/Organization">
-                        <span class='company' itemprop="name">AtSistemas</span>
+                        <span class="roleName" itemprop="roleName">Software Developer</span>
                     </div>
-                    <div itemprop="location" itemscope itemtype="https://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">· Jerez de La Frontera</span>,
-                        <span itemprop="addressCountry">Spain</span>
+                    
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='company' itemprop="name">@ atSistemas</span>
+                    </div>
+                    <div class='location' itemscope itemtype="https://schema.org/Location">
+                        <span>Jerez de la Frontera</span>
                     </div>
                     <span itemprop="startDate" content="2016-12-01">12/2016</span>
                     <span itemprop="endDate" content="2017-08-01">08/2017</span>
                 </div>
-                <span class="roleName" itemprop="roleName">Senior Fullstack Developer</span>
                 <span itemprop="description">
                     <ul>
-                        <li>Architecture and pre-sell analysis per request of final clients</li>
-                        <li>Customer service ticket system with integration of external systems via API based on Laravel
-                        </li>
+                        <li>Architecture design and pre-sell analysis of potential projects</li>
+                        <li>Development of banking projects in Yii Framework, deployment and data balancing via scripts</li>
                     </ul>
                 </span>
             </div>
@@ -205,20 +211,22 @@
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <div class="inlineFields">
                     <div itemscope itemtype="https://schema.org/Organization">
-                        <span class='company' itemprop="name">Interesse</span>
+                        <span class="roleName" itemprop="roleName">Software Developer</span>
                     </div>
-                    <div itemprop="location" itemscope itemtype="https://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">· Mexico City</span>,
-                        <span itemprop="addressCountry">Mexico</span>
+                    
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='company' itemprop="name">@ Interesse</span>
+                    </div>
+                    <div class='location' itemscope itemtype="https://schema.org/Location">
+                        <span>Mexico City</span>
                     </div>
                     <span itemprop="startDate" content="2014-06-01">06/2014</span>
                     <span itemprop="endDate" content="2016-12-01">12/2016</span>
                 </div>
-                <span class="roleName" itemprop="roleName">Senior Fullstack Developer</span>
                 <span itemprop="description">
                     <ul>
-                        <li>Dashboard and automations for a 360º marketing strategy based on Zend Framework</li>
-                        <li>Statistics dashboard involving daily scripts and stored procedures</li>
+                        <li>Development of B2B and B2C portals with tools to facilitate the processing and monitoring of insurance policies with portfolios of large numbers of policyholders.</li>
+                        <li>Development of a statistic dashboard with stored procedures and advanced data strategies</li>
                     </ul>
                 </span>
             </div>
@@ -228,19 +236,22 @@
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <div class="inlineFields">
                     <div itemscope itemtype="https://schema.org/Organization">
-                        <span class='company' itemprop="name">Ibidem Group</span>
+                        <span class="roleName" itemprop="roleName">Web Developer</span>
                     </div>
-                    <div itemprop="location" itemscope itemtype="https://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">· Barcelona</span>,
-                        <span itemprop="addressCountry">Spain</span>
+                    
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='company' itemprop="name">@ Ibidem Group</span>
+                    </div>
+                    <div class='location' itemscope itemtype="https://schema.org/Location">
+                        <span>Barcelona</span>
                     </div>
                     <span itemprop="startDate" content="2012-04-01">04/2012</span>
                     <span itemprop="endDate" content="2014-06-01">06/2014</span>
                 </div>
-                <span class="roleName" itemprop="roleName">Fullstack Developer</span>
                 <span itemprop="description">
                     <ul>
-                        <li>Custom SEO oriented e-shops with multiple payment gateway implementation</li>
+                        <li>Development of custom SEO oriented e-shops with multiple payment gateway implementation, based on PHP.</li>
+                        <li>Development of SEO directory engine and adaptation for multiple niches. Generation of content for them</li>
                     </ul>
                 </span>
             </div>
@@ -250,20 +261,21 @@
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <div class="inlineFields">
                     <div itemscope itemtype="https://schema.org/Organization">
-                        <span class='company' itemprop="name">Empresa Provincial de Información de Cádiz S.A.</span>
+                        <span class="roleName" itemprop="roleName">Software Developer</span>
                     </div>
-                    <div itemprop="location" itemscope itemtype="https://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">· Cádiz</span>,
-                        <span itemprop="addressCountry">Spain</span>
+                    
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='company' itemprop="name">@ EPICSA</span>
+                    </div>
+                    <div class='location' itemscope itemtype="https://schema.org/Location">
+                        <span>Cádiz</span>
                     </div>
                     <span itemprop="startDate" content="2011-01-01">01/2011</span>
-                    <span itemprop="endDate" content="2011-11-01">11/2011</span>
+                    <span itemprop="endDate" content="2011-10-01">11/2011</span>
                 </div>
-                <span class="roleName" itemprop="roleName">Junior Software Developer</span>
                 <span itemprop="description">
                     <ul>
-                        <li>PL/SQL scripts development and maintenance of stored procedures</li>
-                        <li>Debugging and processing of scripts from external systems (AS400)</li>
+                        <li>Development of PL/SQL packages and services to be used in Java frontend</li>
                     </ul>
                 </span>
             </div>
@@ -271,7 +283,7 @@
     </div>
 
     <div class="section">
-        <span class="title">Education</span>
+        <h3><span class="title">Education</span></h3>
         <article>
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <span class="educationName" itemprop="roleName">Master's Degree in Mathematics</span>
@@ -327,22 +339,16 @@
     </div>
 
     <div class="section">
-        <span class="title">Certifications</span>
+        <h3><span class="title">Certifications</span></h3>
         <article>
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <span class="educationName" itemprop="roleName">Programming Mobile Applications for Android Handheld
                     Systems</span>
                 <div class="inlineFields">
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='educationCenter' itemprop="name">University of Maryland.</span>
+                    </div>
                     <span itemprop="endDate" content="2014-02-01">02/2014</span>
-                </div>
-            </div>
-        </article>
-
-        <article>
-            <div itemscope itemtype="https://schema.org/OrganizationRole">
-                <span class="educationName" itemprop="roleName">Swift Language Fundamentals</span>
-                <div class="inlineFields">
-                    <span itemprop="endDate" content="2015-04-01">04/2015</span>
                 </div>
             </div>
         </article>
@@ -352,6 +358,9 @@
                 <span class="educationName" itemprop="roleName">Creative, Serious and Playful Science of Android
                     Apps</span>
                 <div class="inlineFields">
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='educationCenter' itemprop="name">University of Illinois at Urbana-Champaign.</span>
+                    </div>
                     <span itemprop="endDate" content="2014-02-01">02/2014</span>
                 </div>
             </div>
@@ -362,6 +371,10 @@
                 <span class="educationName" itemprop="roleName">Introduction to Programming for Musicians and Digital
                     Artists</span>
                 <div class="inlineFields">
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='educationCenter' itemprop="name">California Institute of the Arts</span>
+                    </div>
+                    
                     <span itemprop="endDate" content="2013-12-01">12/2013</span>
                 </div>
             </div>
@@ -371,34 +384,28 @@
             <div itemscope itemtype="https://schema.org/OrganizationRole">
                 <span class="educationName" itemprop="roleName">Advanced Wordpress</span>
                 <div class="inlineFields">
+                    <div itemscope itemtype="https://schema.org/Organization">
+                        <span class='educationCenter' itemprop="name">Knowledge Management Mexico</span>
+                    </div>
                     <span itemprop="endDate" content="2016-09-01">09/2016</span>
                 </div>
             </div>
         </article>
-    </div>
 
-    <div class="section">
-        <span class="title">Skills</span>
-        <ul class="list">
-            <li>Communication skills</li>
-            <li>SCRUM</li>
-            <li>PHP</li>
-            <li>Joomla</li>
-            <li>MySQL</li>
-            <li>Hibernate</li>
-            <li>HTML</li>
-            <li>Oracle SQL</li>
-            <li>SEO</li>
-            <li>Apache</li>
-            <li>Yii</li>
-            <li>Wordpress</li>
-            <li>Symfony</li>
-            <li>Laravel</li>
-            <li>Zend Framework</li>
-            <li>Sonarqube</li>
-            <li>Agile</li>
-        </ul>
+        <div class="section">
+            <h3><span class="title">Skills</span></h3>
+            <article>
+                <div>
+                    <ul class="list">
+                        <li><strong>Technical: </strong>PHP, Symfony, Laravel, MySQL, Design Patterns, Git, Docker, Unit Testing, Security Awareness, Performance Optimization, Amazon Web Services (AWS)</li>
+                        <li><strong>Leadership: </strong>Project Management, Team Management, Decision-Making, Prioritization, Conflict Resolution, Goal Setting, Code Review, Continuous Integration, Workload Priorization</li>
+                        <li><strong>Communication: </strong>Effective Communication, Documentation, Collaboration, Presentation</li>
+                        <li><strong>Problem-Solving Skills: </strong>Critical Thinking, Innovative Thinking, Adaptability, Troubleshooting</li>
+                        <li><strong>Soft Skills: </strong>Empathy, Time Management, Continuous Learning, Quality Assurance</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
     </div>
 </body>
 </html>
-
